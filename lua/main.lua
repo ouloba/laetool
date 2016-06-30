@@ -56,11 +56,13 @@ local function UpdateDirectry(dir)
 		wnd:Show();
 		HelperSetWindowText(wnd:GetChild("text"), ".");
 		items:AddChild(wnd);		
+		wnd:GetChild("icon"):SetState(0);
 		
 		local wnd = item:Clone();
 		wnd:Show();
 		HelperSetWindowText(wnd:GetChild("text"), "..");
 		items:AddChild(wnd);		
+		wnd:GetChild("icon"):SetState(0);
 	end
 	
 	--垂直滚动条适应内容大小。
@@ -93,7 +95,7 @@ local function OnMouseEnterItem(window, msg, sender)
 	 
 	 LXZAPI_OutputDebugStr("OnMouseEnterItem:"..f.." mode:"..attr.mode);
 	 
-     if attr.mode == "file" and (ext=="png" or ext=="PNG") then --如果是图片文件
+     if attr.mode == "file" and (ext=="png" or ext=="PNG" or ext=="jpg") then --如果是图片文件
 		LXZAPI_OutputDebugStr("OnMouseEnterItem:"..f.." ext:"..ext.." mode:"..attr.mode);
 		local wnd = root:GetLXZWindow ("folders:show picture");
 		HelperSetWindowPictureFile(wnd,f);
