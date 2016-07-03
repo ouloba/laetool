@@ -1,0 +1,16 @@
+lfs.attributes/*"Get file information using stat."*/
+lfs.chdir/*This function changes the working (current) directory*/
+lfs.currentdir/*当前目录*/
+lfs.dir/*Factory of directory iterators*/
+lfs.link/*非windows,Creates a link, #1 Object to link to;#2 Name of link;#3 True if link is symbolic (optional)*/
+lfs.lock/*Locks a file*/
+lfs.mkdir/*创建目录*/,
+lfs.rmdir/*删除目录*/
+lfs.symlinkattributes/*Get symbolic link information using lstat*/
+lfs.setmode/*parameter:"binary","text"*/
+lfs.touch/*Set access time and modification values for file*/
+lfs.unlock/*Unlocks a file.*/
+lfs.lock_dir/*param:path*/
+dir_iter:next
+dir_iter:close
+dir_iter/*function,return dir name or file name.*/

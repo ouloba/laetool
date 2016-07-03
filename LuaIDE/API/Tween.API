@@ -1,0 +1,15 @@
+tween
+tween.eraseIn
+tween.eraseOut
+tween.eraseInOut
+tween.LINEAR
+tween.SINE
+tween.QUINT
+tween.QUART
+tween.QUAD
+tween.EXPO
+tween.ELASTIC
+tween.CUBIC
+tween.CIRC
+tween.BOUNCE
+tween.BACK

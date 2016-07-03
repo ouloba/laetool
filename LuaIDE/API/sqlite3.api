@@ -1,0 +1,6 @@
+sqlite3
+sqlite3:open
+
+db
+db:close
+db:exec

@@ -1,0 +1,8 @@
+
+timersys
+CLXZTimerSystem:Instance
+timersys:KillTimer
+timersys:IsTimerEnd
+timesys:GetTimerLeftCount
+timesys:SetTimer
+timesys:AddSubTimer
