@@ -8,11 +8,3 @@ snap_btn.png.set
 pic_btn.png.set
 suofangtu1.png.set
 Engulf.ui
-demo.jpg.set
-bottom_bar.png.set
-top_bar.png.set
-color_back.png.set
-circle.png.set
-snap_btn.png.set
-pic_btn.png.set
-suofangtu1.png.set
