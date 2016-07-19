@@ -6,3 +6,4 @@ http://my.oschina.net/u/1030910/blog
 
 ![Screenshot](screenshots/1.png?raw=true)
 ![Screenshot](screenshots/2.png?raw=true)
+![Screenshot](screenshots/3.png?raw=true)
