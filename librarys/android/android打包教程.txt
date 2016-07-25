@@ -1,0 +1,17 @@
+Android打包教程
+1、拷贝android下libs目录合并到,app下。
+2、拷贝用户资源文件到assets下。
+3、在MainActivity.java导入com.lxzengine.androidapp.LXZEngineActivity;
+4、public class MainActivity extends LXZEngineActivity。
+5、修改build.gradle，添加
+sourceSets {
+    main {
+        assets.srcDirs = ['assets']
+        jniLibs.srcDirs=['libs']
+    }
+}
+
+
+用户也可以直接修改LaeApp项目，只需修改assets中的文件成用户正在编辑的项目文件即可。
+
+
