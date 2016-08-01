@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7116A681BE35C52004B5803 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7116A671BE35C52004B5803 /* AudioToolbox.framework */; };
+		B7116A6A1BE35C76004B5803 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7116A691BE35C76004B5803 /* OpenAL.framework */; };
+		B7116A6C1BE35CA2004B5803 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7116A6B1BE35CA2004B5803 /* AVFoundation.framework */; };
+		B711735C1BE5D864004B5803 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B71173591BE5D864004B5803 /* libcrypto.a */; };
+		B711735D1BE5D864004B5803 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B711735A1BE5D864004B5803 /* libcurl.a */; };
+		B711735E1BE5D865004B5803 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B711735B1BE5D864004B5803 /* libssl.a */; };
+		B711783B1BE5E1FC004B5803 /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B711783A1BE5E1FC004B5803 /* libiconv.2.4.0.tbd */; };
+		B71178421BE5E639004B5803 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B71178411BE5E639004B5803 /* libiconv.tbd */; };
+		B711785B1BEDD298004B5803 /* default.cfg in Resources */ = {isa = PBXBuildFile; fileRef = B71178591BEDD298004B5803 /* default.cfg */; };
+		B71178641BEE293F004B5803 /* MicrosoftYaHei.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71178631BEE293F004B5803 /* MicrosoftYaHei.ttf */; };
+		B72208481BE2172000E44D68 /* libluajit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B72208461BE2172000E44D68 /* libluajit.a */; };
+		B752D73F1BDF1E1000C38FD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B752D73E1BDF1E1000C38FD4 /* main.m */; };
+		B752D74A1BDF1E1000C38FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B752D7491BDF1E1000C38FD4 /* Assets.xcassets */; };
+		B752D7581BDF1ED500C38FD4 /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B752D7551BDF1ED500C38FD4 /* AppController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B752D7591BDF1ED500C38FD4 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B752D7571BDF1ED500C38FD4 /* RootViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B7B8F1251D475DEE0076A937 /* lae.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7B8F1241D475DEE0076A937 /* lae.framework */; };
+		B7B8F16B1D4768B20076A937 /* Game2048.LXZ in Resources */ = {isa = PBXBuildFile; fileRef = B7B8F16A1D4768B20076A937 /* Game2048.LXZ */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7116A651BE35C3D004B5803 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		B7116A671BE35C52004B5803 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B7116A691BE35C76004B5803 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		B7116A6B1BE35CA2004B5803 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B71173591BE5D864004B5803 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../lae/lae/lib/libcrypto.a; sourceTree = "<group>"; };
+		B711735A1BE5D864004B5803 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../lae/lae/lib/libcurl.a; sourceTree = "<group>"; };
+		B711735B1BE5D864004B5803 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../lae/lae/lib/libssl.a; sourceTree = "<group>"; };
+		B711783A1BE5E1FC004B5803 /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		B71178411BE5E639004B5803 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		B71178591BEDD298004B5803 /* default.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = default.cfg; path = data/default.cfg; sourceTree = "<group>"; };
+		B71178631BEE293F004B5803 /* MicrosoftYaHei.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MicrosoftYaHei.ttf; sourceTree = "<group>"; };
+		B72208461BE2172000E44D68 /* libluajit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libluajit.a; path = ../lae/lae/lib/libluajit.a; sourceTree = "<group>"; };
+		B752D73A1BDF1E1000C38FD4 /* eLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B752D73E1BDF1E1000C38FD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B752D7491BDF1E1000C38FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B752D74E1BDF1E1000C38FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B752D7541BDF1ED500C38FD4 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		B752D7551BDF1ED500C38FD4 /* AppController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppController.mm; sourceTree = "<group>"; };
+		B752D7561BDF1ED500C38FD4 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B752D7571BDF1ED500C38FD4 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
+		B7B8F1241D475DEE0076A937 /* lae.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lae.framework; path = lib/lae.framework; sourceTree = "<group>"; };
+		B7B8F16A1D4768B20076A937 /* Game2048.LXZ */ = {isa = PBXFileReference; lastKnownFileType = file; name = Game2048.LXZ; path = data/Game2048.LXZ; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B752D7371BDF1E1000C38FD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B8F1251D475DEE0076A937 /* lae.framework in Frameworks */,
+				B71178421BE5E639004B5803 /* libiconv.tbd in Frameworks */,
+				B711783B1BE5E1FC004B5803 /* libiconv.2.4.0.tbd in Frameworks */,
+				B711735C1BE5D864004B5803 /* libcrypto.a in Frameworks */,
+				B711735D1BE5D864004B5803 /* libcurl.a in Frameworks */,
+				B711735E1BE5D865004B5803 /* libssl.a in Frameworks */,
+				B72208481BE2172000E44D68 /* libluajit.a in Frameworks */,
+				B7116A6C1BE35CA2004B5803 /* AVFoundation.framework in Frameworks */,
+				B7116A6A1BE35C76004B5803 /* OpenAL.framework in Frameworks */,
+				B7116A681BE35C52004B5803 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B752D7311BDF1E1000C38FD4 = {
+			isa = PBXGroup;
+			children = (
+				B7B8F1241D475DEE0076A937 /* lae.framework */,
+				B71178411BE5E639004B5803 /* libiconv.tbd */,
+				B711783A1BE5E1FC004B5803 /* libiconv.2.4.0.tbd */,
+				B71173591BE5D864004B5803 /* libcrypto.a */,
+				B711735A1BE5D864004B5803 /* libcurl.a */,
+				B711735B1BE5D864004B5803 /* libssl.a */,
+				B7116A6B1BE35CA2004B5803 /* AVFoundation.framework */,
+				B7116A691BE35C76004B5803 /* OpenAL.framework */,
+				B7116A671BE35C52004B5803 /* AudioToolbox.framework */,
+				B7116A651BE35C3D004B5803 /* CoreAudioKit.framework */,
+				B72208461BE2172000E44D68 /* libluajit.a */,
+				B752D73C1BDF1E1000C38FD4 /* eLight */,
+				B752D73B1BDF1E1000C38FD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B752D73B1BDF1E1000C38FD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B752D73A1BDF1E1000C38FD4 /* eLight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B752D73C1BDF1E1000C38FD4 /* eLight */ = {
+			isa = PBXGroup;
+			children = (
+				B7B8F16A1D4768B20076A937 /* Game2048.LXZ */,
+				B71178631BEE293F004B5803 /* MicrosoftYaHei.ttf */,
+				B71178591BEDD298004B5803 /* default.cfg */,
+				B752D7541BDF1ED500C38FD4 /* AppController.h */,
+				B752D7551BDF1ED500C38FD4 /* AppController.mm */,
+				B752D7561BDF1ED500C38FD4 /* RootViewController.h */,
+				B752D7571BDF1ED500C38FD4 /* RootViewController.mm */,
+				B752D7491BDF1E1000C38FD4 /* Assets.xcassets */,
+				B752D74E1BDF1E1000C38FD4 /* Info.plist */,
+				B752D73D1BDF1E1000C38FD4 /* Supporting Files */,
+			);
+			path = eLight;
+			sourceTree = "<group>";
+		};
+		B752D73D1BDF1E1000C38FD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B752D73E1BDF1E1000C38FD4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B752D7391BDF1E1000C38FD4 /* eLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B752D7511BDF1E1000C38FD4 /* Build configuration list for PBXNativeTarget "eLight" */;
+			buildPhases = (
+				B752D7361BDF1E1000C38FD4 /* Sources */,
+				B752D7371BDF1E1000C38FD4 /* Frameworks */,
+				B752D7381BDF1E1000C38FD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eLight;
+			productName = eLight;
+			productReference = B752D73A1BDF1E1000C38FD4 /* eLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B752D7321BDF1E1000C38FD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "廖锡州";
+				TargetAttributes = {
+					B752D7391BDF1E1000C38FD4 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = B4MF5Q42WR;
+					};
+				};
+			};
+			buildConfigurationList = B752D7351BDF1E1000C38FD4 /* Build configuration list for PBXProject "eLight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B752D7311BDF1E1000C38FD4;
+			productRefGroup = B752D73B1BDF1E1000C38FD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B752D7391BDF1E1000C38FD4 /* eLight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B752D7381BDF1E1000C38FD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B8F16B1D4768B20076A937 /* Game2048.LXZ in Resources */,
+				B71178641BEE293F004B5803 /* MicrosoftYaHei.ttf in Resources */,
+				B711785B1BEDD298004B5803 /* default.cfg in Resources */,
+				B752D74A1BDF1E1000C38FD4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B752D7361BDF1E1000C38FD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B752D73F1BDF1E1000C38FD4 /* main.m in Sources */,
+				B752D7591BDF1ED500C38FD4 /* RootViewController.mm in Sources */,
+				B752D7581BDF1ED500C38FD4 /* AppController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B752D74F1BDF1E1000C38FD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B752D7501BDF1E1000C38FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B752D7521BDF1E1000C38FD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../lae/DerivedData/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/lib",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = USE_VBO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = eLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../lae/lae/lib",
+					"$(SRCROOT)/../lae/DerivedData/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LXZ.eLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B752D7531BDF1E1000C38FD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../lae/DerivedData/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/lib",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = USE_VBO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = eLight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SRCROOT)/../lae/lae/lib",
+					"$(SRCROOT)/../lae/DerivedData/Build/Products/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = LXZ.eLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B752D7351BDF1E1000C38FD4 /* Build configuration list for PBXProject "eLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B752D74F1BDF1E1000C38FD4 /* Debug */,
+				B752D7501BDF1E1000C38FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B752D7511BDF1E1000C38FD4 /* Build configuration list for PBXNativeTarget "eLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B752D7521BDF1E1000C38FD4 /* Debug */,
+				B752D7531BDF1E1000C38FD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B752D7321BDF1E1000C38FD4 /* Project object */;
+}

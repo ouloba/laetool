@@ -1,0 +1,6 @@
+framework module lae {
+  umbrella header "lae.h"
+
+  export *
+  module * { export * }
+}
