@@ -306,17 +306,9 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 
 	GetCfgInt(xxnScreenWidth, nScreenWidth);
 	GetCfgInt(xxnScreenHeight, nScreenHeight);
-
-	if (strcmp(shortName, "LXZWin32R") == 0){
-		ICGuiRun(eOpenGLES, false, "default.cfg");
-	}
-	else{
-		char cfg_name[MAX_PATH];
-		strcpy(cfg_name, shortName);
-		strcat(cfg_name, ".cfg");
-		ICGuiRun(eOpenGLES, false, cfg_name);
-	}
-
+		
+	ICGuiRun(eOpenGLES, false, "default.cfg");
+	
 	LXZAPI_SetFrameTime(15);
 	LXZOutputDebugStr("RegisterClass Success!\r\n");
 
