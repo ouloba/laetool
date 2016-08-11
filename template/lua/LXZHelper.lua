@@ -22,8 +22,13 @@ function EffectEase(wnd, t)
 		return true;
 	end
 	
+	local obj=wnd;
+	if t.render ~= nil then
+		obj=wnd:GetRender(t.render);
+	end
+	
 	if t.attribute_ref == nil then
-		t.attribute_ref=wnd:GetAttributeNameRef(t.attribute);
+		t.attribute_ref=obj:GetAttributeNameRef(t.attribute);
 	end
 	
 	if t.offset == nil then
@@ -31,7 +36,7 @@ function EffectEase(wnd, t)
 	end
 	
 	if t.origin == nil then
-		t.origin = wnd:GetAttribute(t.attribute_ref);
+		t.origin = obj:GetAttribute(t.attribute_ref);
 	end
 	
 	if t.time == nil then
@@ -48,13 +53,13 @@ function EffectEase(wnd, t)
 		
 	local v=t.fn(t.type,t.time,t.begin, t.change, t.duration)+t.origin+t.offset;
 	t.time=t.time+LXZAPI_GetFrameTime();
-	wnd:SetAttribute (t.attribute_ref, v);
+	obj:SetAttribute (t.attribute_ref, v);
 	
 	if t.time>=t.duration then
 		t.count=t.count-1;
 		if t.count<=0 then
 			if t.reset ~= nil then
-				wnd:SetAttribute (t.attribute_ref, t.origin);
+				obj:SetAttribute (t.attribute_ref, t.origin);
 			end
 			
 			if t.hide~= nil then
@@ -979,7 +984,7 @@ function UpdateWindow()
 	local ref = 0;
 	local cnt = 0;
 	for k,wnd in pairs(tblUpdateWnd) do
-		if(wnd.updateself == nil) then
+		if(wnd.updateself == nil and wnd:GetID()==k) then
 			cnt = UpdateWnd(wnd,k);
 			ref = ref+cnt;
 		end
@@ -988,7 +993,7 @@ function UpdateWindow()
 	end
 		
 	for k,wnd in pairs(tblUpdateWnd) do
-		if(wnd ~= nil and wnd:IsDeleted() == false) then
+		if(wnd ~= nil and wnd:IsDeleted() == false and k==wnd:GetID()) then
 			tbl[wnd:GetID()] = wnd;
 		end
 	end
@@ -1088,6 +1093,14 @@ function TrimRightChar(str, a)
 	end	
 	
 	return str;
+end
+
+function xxxxURLResponeFunc(urlresponse)	
+	local urlrequest = urlresponse:getRequest();
+	if(urlrequest.thread ~= nil) then
+		--LXZMessageBox("urlrequest.thread:"..type(urlrequest.thread));
+		coroutine.resume(urlrequest.thread, urlresponse);		
+	end	
 end
 
 function HelperPostJSON(url, data, fn)
