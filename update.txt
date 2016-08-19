@@ -1,5 +1,4 @@
-当前版本10更新：
-1、支持xp，lae可以运行在xp以上，兼容window7、window8、window10等。
-2、增加librarys开发库，支持android studio、vs2010以上、xcode开发平台。
-3、增加LuaIDE，可在代码自动提示中加入注释
-4、修改lae使用文档,增加各种属性说明
+版本22.0,更新内容：
+1、修正lae v21.0 版本crash问题
+2、修正扩展接口
+
